@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AN CAO DEMO WebRTC</title>
+        <script src="jquery.js"></script>
+        <script src="peer.js"></script>
+        <script src="socket.io.js"></script>
+    </head>
+    <body>
+        <div id="div-chat">
+            <p>Tài Khoản Online:</p>
+            <ul id="ulUser">
+            </ul>
+            <h3 id="my-peer">Thông Tin Id Của Bạn: </h3>
+            <video id="localStream" width="300" controls></video>
+            <br /><br />
+            <video id="remoteStream" width="300" controls></video>
+            <br /><br />
+            <input type="text" id="remoteId" placeholder="Remote ID">
+            <button id="btnCall">Gọi</button>
+        </div>
+        <div id="div-dang-ky">
+            <br /><br />
+            <input type="text" id="txtUsername" placeholder="Nhập Tên Của Bạn">
+            <button id="btnSignUp">Đăng Kí</button>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
